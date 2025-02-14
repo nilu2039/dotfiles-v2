@@ -26,4 +26,6 @@ require("lazy").setup({
 	require("plugins.conform"),
 	require("plugins.nvim-ts-autotag"),
 	require("plugins.copilot"),
+	require("plugins.tabout"),
+	require("plugins.alpha"),
 })
