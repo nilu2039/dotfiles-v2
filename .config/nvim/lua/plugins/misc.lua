@@ -57,6 +57,13 @@ return {
 		opts = {
 			toggler = {
 				line = "<leader>/",
+				block = "<leader>*",
+			},
+			opleader = {
+				---Line-comment keymap
+				line = "<leader>/",
+				---Block-comment keymap
+				block = "<leader>*",
 			},
 		},
 	},
