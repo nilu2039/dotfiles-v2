@@ -29,3 +29,5 @@ require("lazy").setup({
 	require("plugins.tabout"),
 	require("plugins.alpha"),
 })
+
+vim.cmd("colorscheme base16-black-metal-gorgoroth")
