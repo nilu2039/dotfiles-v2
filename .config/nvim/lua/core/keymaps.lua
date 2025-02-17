@@ -78,6 +78,12 @@ vim.keymap.set("n", "<A-j>", "yyp", { desc = "Duplicate line down" }) -- Alt + j
 -- Duplicate line up
 vim.keymap.set("n", "<A-k>", "yyP", { desc = "Duplicate line up" }) -- Alt + k
 
+-- Duplicate line down visual mode
+vim.keymap.set("v", "<A-j>", "y'>p", { desc = "Duplicate line down" }) -- Alt + j
+
+-- Duplicate line up visual mode
+vim.keymap.set("v", "<A-k>", "y`<P", { desc = "Duplicate line up" }) -- Alt + k
+
 --local builtin = require("telescope.builtin")
 --vim.keymap.set("n", "<leader>fs", function()
 --	builtin.grep_string({
