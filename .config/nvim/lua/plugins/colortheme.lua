@@ -57,4 +57,5 @@ return {
 	-- 	end,
 	-- },
 	"RRethy/base16-nvim",
+	"blazkowolf/gruber-darker.nvim",
 }

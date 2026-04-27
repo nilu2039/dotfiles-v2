@@ -15,6 +15,9 @@ return { -- Main LSP Configuration
 		"hrsh7th/cmp-nvim-lsp",
 	},
 	config = function()
+		local lspconfig = require("lspconfig")
+		lspconfig.sourcekit.setup({})
+
 		local function organize_imports()
 			local params = {
 				command = "_typescript.organizeImports",
@@ -170,8 +173,13 @@ return { -- Main LSP Configuration
 		--  - settings (table): Override the default settings passed when initializing the server.
 		--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 		local servers = {
-			-- clangd = {},
+			clangd = {
+				capabilities = {
+					offsetEncoding = { "utf-16" },
+				},
+			},
 			gopls = {},
+			ols = {},
 			-- pyright = {},
 			-- rust_analyzer = {},
 			-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs

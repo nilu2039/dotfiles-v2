@@ -33,8 +33,8 @@ vim.keymap.set("n", "<leader>x", ":bdelete!<CR>", opts) -- close buffer
 vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts) -- new buffer
 
 -- Window management
-vim.keymap.set("n", "<leader>v", "<C-w>v", opts) -- split window vertically
-vim.keymap.set("n", "<leader>h", "<C-w>s", opts) -- split window horizontally
+vim.keymap.set("n", "<leader>sv", "<C-w>v", opts) -- split window vertically
+vim.keymap.set("n", "<leader>sh", "<C-w>s", opts) -- split window horizontally
 vim.keymap.set("n", "<leader>se", "<C-w>=", opts) -- make split windows equal width & height
 vim.keymap.set("n", "<leader>xs", ":close<CR>", opts) -- close current split window
 
